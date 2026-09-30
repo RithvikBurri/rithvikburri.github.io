@@ -68,9 +68,9 @@ export const experience: Experience[] = [
     org: "Saudi Red Crescent Authority",
     dates: "Jan 2026 – May 2026",
     bullets: [
-      "Built a two-layer anomaly detection system for patient monitoring across pilgrimage sites, including Mecca, combining clinical rules with an Isolation Forest model on live streaming data — 87.6% precision / 92.0% recall on 4,353 patients",
-      "Shipped an AI voice-agent workflow that calls flagged patients and escalates to responders in under 400ms end-to-end",
-      "Wrote the technical case that got the team approved to migrate to a cloud-based, real-time streaming infrastructure",
+      "Built a two-layer anomaly detection system for real-time patient monitoring across pilgrimage sites including Mecca, reaching 87.6% precision and 92.0% recall across 4,353 patients",
+      "Shipped an AI voice-agent workflow that autonomously assessed flagged patients and escalated to responders in under 400ms",
+      "Drove adoption of a full migration to real-time cloud streaming infrastructure, cutting latency and operational cost",
     ],
   },
   {
@@ -78,8 +78,8 @@ export const experience: Experience[] = [
     org: "TeliAI",
     dates: "Jan 2026 – May 2026",
     bullets: [
-      "Cleaned and validated 83K+ raw SMS messages into 67K+ usable conversation threads",
-      "Built an analytics platform that turns conversations into campaign insights in under 30 seconds using an LLM-powered pipeline",
+      "Engineered a pipeline that cleaned and validated 83K+ raw SMS messages into 67K+ analysis-ready conversation threads",
+      "Delivered an analytics platform turning raw conversations into campaign insights in under 30 seconds",
     ],
   },
   {
@@ -87,9 +87,9 @@ export const experience: Experience[] = [
     org: "BlackSync AI",
     dates: "May 2025 – Jan 2026",
     bullets: [
-      "Cut voice-agent latency 50%+ to under 850ms by optimizing the speech-to-text/text-to-speech pipeline",
-      "Built a retrieval-augmented pipeline that lifted appointment conversion 17% and call duration 32%",
-      "Automated CRM-integrated outbound calling pipelines, running 500-call campaigns in under 30 minutes",
+      "Cut voice-agent latency 50%+ to under 850ms by re-architecting the speech-to-text/text-to-speech pipeline",
+      "Designed a retrieval-augmented generation system that lifted appointment conversion 17% and call duration 32%",
+      "Automated CRM-integrated outbound pipelines running 500-call campaigns in under 30 minutes",
     ],
   },
 ];
@@ -97,51 +97,23 @@ export const experience: Experience[] = [
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["Python", "SQL", "Java", "C++", "R", "Bash"],
+    items: ["Python", "SQL", "Java", "C++"],
   },
   {
-    category: "ML Frameworks",
-    items: [
-      "PyTorch",
-      "TensorFlow",
-      "scikit-learn",
-      "XGBoost",
-      "HuggingFace",
-      "LangChain",
-      "LangGraph",
-    ],
+    category: "ML / AI",
+    items: ["PyTorch", "LangChain", "LangGraph", "HuggingFace"],
   },
   {
     category: "Data Engineering",
-    items: [
-      "Airflow",
-      "Spark",
-      "Kafka",
-      "Databricks",
-      "Snowflake",
-      "dbt",
-      "Ataccama",
-      "Power BI",
-      "Tableau",
-    ],
+    items: ["Spark", "Airflow", "Kafka", "Databricks", "Snowflake"],
   },
   {
-    category: "Cloud/MLOps",
-    items: [
-      "AWS",
-      "Azure",
-      "GCP",
-      "Oracle",
-      "Docker",
-      "Kubernetes",
-      "MLflow",
-      "SageMaker",
-      "Weights & Biases",
-    ],
+    category: "Cloud",
+    items: ["AWS", "GCP", "Azure", "Oracle"],
   },
   {
-    category: "Libraries",
-    items: ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", "Plotly"],
+    category: "Visualization",
+    items: ["Power BI", "Tableau"],
   },
 ];
 
