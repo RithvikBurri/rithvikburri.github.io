@@ -74,7 +74,7 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: "Data Engineer (Capstone)",
+    role: "Data Engineer",
     org: "TeliAI",
     dates: "Jan 2026 – May 2026",
     bullets: [
