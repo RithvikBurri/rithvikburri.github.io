@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Design tokens. Tailwind v4 turns each --color-* into utilities
+   (bg-term-panel, text-term-amber, border-term-line, ...).
+   Contrast (vs --color-term-panel): fg 12.6:1, dim 5.7:1, green 11.1:1,
+   amber 10.9:1, cyan 11.6:1. "faint" (3.1:1) is reserved for decorative
+   gutters and borders, never for content.
+   --------------------------------------------------------------------------- */
+@theme {
+  --font-mono:
+    "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+
+  --color-term-bg: #040605;
+  --color-term-panel: #0a0e0d;
+  --color-term-bar: #0e1412;
+  --color-term-line: #1b2621;
+  --color-term-line-active: #2f9e5f;
+  --color-term-fg: #c8d3cc;
+  --color-term-dim: #7f8f86;
+  --color-term-faint: #56635c;
+  --color-term-green: #4ade80;
+  --color-term-green-bright: #86efac;
+  --color-term-amber: #f5b841;
+  --color-term-cyan: #67d8e8;
+  --color-term-red: #f87171;
+  --color-term-magenta: #d8a0f0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  color-scheme: dark;
+  scrollbar-color: var(--color-term-line) var(--color-term-bg);
+  scrollbar-width: thin;
+}
+
+body {
+  background: var(--color-term-bg);
+}
+
+::selection {
+  background: var(--color-term-green);
+  color: var(--color-term-bg);
+}
+
+/* Soft phosphor bloom for headings/accents. Static — no flicker. */
+.phosphor {
+  text-shadow:
+    0 0 1px currentColor,
+    0 0 12px color-mix(in srgb, currentColor 35%, transparent);
+}
+
+/* CRT layer: fine scanlines + vignette. Purely static (no flicker or roll,
+   so no seizure risk) and pointer-transparent. Sits above content at very
+   low intensity so it textures the whole screen like real glass would. */
+.crt-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background:
+    radial-gradient(ellipse at center, transparent 62%, rgb(0 0 0 / 0.3) 100%),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      rgb(0 0 0 / 0.16) 2px,
+      rgb(0 0 0 / 0.16) 3px
+    );
+}
+
+/* TUI pane title that sits *on* the top border (lazygit/k9s style). The
+   two-tone background matches the page above the border line and the
+   panel below it, so the label cleanly "cuts" the border. */
+.pane-title {
+  background: linear-gradient(
+    to bottom,
+    var(--color-term-bg) 50%,
+    var(--color-term-panel) 50%
+  );
+}
+
+/* Block cursor */
+.cursor-block {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  vertical-align: text-bottom;
+  background: var(--color-term-green);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cursor-block {
+    animation: cursor-blink 1.1s steps(1, end) infinite;
+  }
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
