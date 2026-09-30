@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { TerminalPane } from "@/components/hacker/TerminalPane";
-import { bootLines, education, profile } from "@/lib/content";
+import { bootLines, profile } from "@/lib/content";
 import { usePrefersReducedMotion } from "@/lib/use-prefers-reduced-motion";
 
 const TYPE_SPEED_MS = 14;
@@ -38,7 +38,6 @@ function WhoamiPane({ active }: { active: boolean }) {
   ].filter(Boolean);
 
   const facts: [string, ReactNode][] = [
-    ["edu", `${education.degree} · ${education.school}`],
     [
       "status",
       <span key="s" className="flex flex-wrap gap-x-4 text-term-green">
