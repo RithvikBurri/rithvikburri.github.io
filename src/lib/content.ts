@@ -47,7 +47,7 @@ export const profile: Profile = {
   name: "Rithvik Burri",
   handle: "rithvikburri",
   role: "AI / ML Engineer",
-  email: "burririt@msu.edu",
+  email: "rithvikburri@gmail.com",
   linkedin: "linkedin.com/in/rithvikburri",
   linkedinUrl: "https://linkedin.com/in/rithvikburri",
   phone: "847-899-6809",
