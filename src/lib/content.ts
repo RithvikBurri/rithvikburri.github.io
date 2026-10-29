@@ -69,7 +69,7 @@ export const experience: Experience[] = [
     dates: "Jan 2026 – May 2026",
     bullets: [
       "Built a two-layer anomaly detection system for real-time patient monitoring across pilgrimage sites, including Mecca, reaching 87.6% precision and 92.0% recall across a cohort of 4,353 patients",
-      "Engineered a voice-agent workflow that assessed flagged patients and escalated critical cases to emergency responders, sustaining end-to-end latency under 400ms across 5,000+ logged events"
+      "Engineered a voice-agent workflow that assessed flagged patients and escalated critical cases to emergency responders, sustaining end-to-end latency under 400ms across 5,000+ logged events",
     ],
   },
   {
@@ -77,8 +77,8 @@ export const experience: Experience[] = [
     org: "Teli AI",
     dates: "Jan 2026 – May 2026",
     bullets: [
-      "Engineered a pipeline that cleaned and validated 83K+ raw SMS messages into 67K+ analysis-ready conversation threads",
-      "Delivered an analytics platform turning raw conversations into campaign insights in under 30 seconds",
+      "Engineered a data-quality pipeline that turned 83K+ raw SMS messages into 67K+ validated conversation threads for marketing analytics",
+      "Delivered an AI analytics platform that interpreted the context and sentiment of each conversation to guide the marketing team on where and when to focus, with end-to-end analysis in under 30 seconds",
     ],
   },
   {
