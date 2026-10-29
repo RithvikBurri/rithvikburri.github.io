@@ -69,7 +69,7 @@ export const experience: Experience[] = [
     dates: "Jan 2026 – May 2026",
     bullets: [
       "Built a two-layer anomaly detection system for real-time patient monitoring across pilgrimage sites, including Mecca, reaching 87.6% precision and 92.0% recall across a cohort of 4,353 patients",
-      "Engineered an AI voice-agent workflow that autonomously contacts flagged patients, assesses the situation, and escalates to human responders when warranted, sustaining end-to-end latency under 400ms"
+      "Engineered a voice-agent workflow that assessed flagged patients and escalated critical cases to emergency responders, sustaining end-to-end latency under 400ms across 5,000+ logged events"
     ],
   },
   {
