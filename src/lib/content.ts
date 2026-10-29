@@ -68,9 +68,8 @@ export const experience: Experience[] = [
     org: "Saudi Red Crescent Authority",
     dates: "Jan 2026 – May 2026",
     bullets: [
-      "Built a two-layer anomaly detection system for real-time patient monitoring across pilgrimage sites including Mecca, reaching 87.6% precision and 92.0% recall across 4,353 patients",
-      "Shipped an AI voice-agent workflow that autonomously assessed flagged patients and escalated to responders in under 400ms",
-      "Drove adoption of a full migration to real-time cloud streaming infrastructure, cutting latency and operational cost",
+      "Built a two-layer anomaly detection system for real-time patient monitoring across pilgrimage sites, including Mecca, reaching 87.6% precision and 92.0% recall across a cohort of 4,353 patients",
+      "Engineered an AI voice-agent workflow that autonomously contacts flagged patients, assesses the situation, and escalates to human responders when warranted, sustaining end-to-end latency under 400ms"
     ],
   },
   {
