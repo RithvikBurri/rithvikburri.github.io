@@ -86,9 +86,8 @@ export const experience: Experience[] = [
     org: "BlackSync AI",
     dates: "May 2025 – Jan 2026",
     bullets: [
-      "Cut voice-agent latency 50%+ to under 850ms by re-architecting the speech-to-text/text-to-speech pipeline",
-      "Designed a retrieval-augmented generation system that lifted appointment conversion 17% and call duration 32%",
-      "Automated CRM-integrated outbound pipelines running 500-call campaigns in under 30 minutes",
+      "Built a retrieval-augmented generation system that lifted appointment conversion 17% and average call duration 32% within 3 weeks of deployment",
+      "Automated CRM-integrated outbound pipelines that complete campaigns of up to 500 calls in under 30 minutes",
     ],
   },
 ];
