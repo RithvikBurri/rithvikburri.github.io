@@ -117,7 +117,7 @@ export const skills: SkillGroup[] = [
 
 export const certifications: Certification[] = [
   { name: "Databricks Certified Data Engineer Associate" },
-  { name: "Google Professional Machine Learning Engineer" },
+  { name: "Google Cloud Certified Associate Cloud Engineer" },
   { name: "AWS Certified Machine Learning Engineer Associate" },
 ];
 
