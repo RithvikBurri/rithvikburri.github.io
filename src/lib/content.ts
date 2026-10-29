@@ -99,7 +99,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "ML / AI",
-    items: ["PyTorch", "LangChain", "LangGraph", "HuggingFace"],
+    items: ["XGBoost", "PyTorch", "HuggingFace", "LangGraph", "RAG"],
   },
   {
     category: "Data Engineering",
